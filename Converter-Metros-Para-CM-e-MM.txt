@@ -1,0 +1,26 @@
+using System;
+using System.Diagnostics.Metrics;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        int metro = 0;
+        int centimetro = 0;
+        int milimetro = 0;
+
+        Console.WriteLine("Digite o valor em Metros:");
+        metro = Convert.ToInt16(Console.ReadLine());
+
+        centimetro = metro * 100;
+        milimetro = metro * 1000;
+
+        string resultado_cm = $"\nO valor [{metro}] que você digitou em metros, é [{centimetro}] convertido em centimetros. \n";
+        string resultado_mm = $"O valor [{metro}] que você digitou em metros, é [{milimetro}] convertido em milimetros. \n";
+
+        Console.WriteLine(resultado_cm);
+        Console.WriteLine(resultado_mm);
+
+        Console.WriteLine("\nEspero que tenha gostado!");
+
+    }
+}
